@@ -98,8 +98,8 @@ color: #64696a;background: #f0f0f0;
 .downloadshelf figcaption h2 span::before {
     position: absolute;
     top: 0;
-    left: 40%;
-    width: 40%;
+    left: 10%;
+    width: 80%;
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
     content: '';
@@ -108,7 +108,7 @@ color: #64696a;background: #f0f0f0;
     text-align: center;background:#ff2266;
 text-transform: uppercase;letter-spacing: 0.1em;
 font-weight: 300;position: relative;display: inline-block;
- margin: 10px 0 0 10px;padding: 25px 0;
+ margin: 10px 0 0 10px;padding: 25px 0;     text-decoration: none;
 font-family: 'Lato', Arial, sans-serif;border: 1px solid #ff4c4c;
 border-radius: 5px;max-width: 75%;width: 224px;vertical-align: top;color:#fff;
 }
@@ -159,6 +159,15 @@ background:#ff4466;
     width: 324px;
     vertical-align: top;
 }
+ .detail2 h2 {
+    font-family: Abril Fatface, serif;
+	text-transform: uppercase;
+ letter-spacing: 0.1em;font-weight: 300;
+ line-height: 1.3;font-size: 0.8em;margin: 0 auto;
+ padding: 1em 1em;width:100%;height:40px;
+color: #64696a;background: #f0f0f0;
+}
+
 .book {
     position: relative;
     margin: 0 auto;
@@ -192,39 +201,7 @@ background:#ff4466;
 .buttons a:hover,
 .buttons a:active { color: #64696a }
 
-.bookshelf figcaption {
-    position: relative;
-    top: 100%;
-    padding: 0 2em;
-    text-align: center;
-}
-.bookshelf figcaption h2 {
-    margin: 1em 0 0 0;
-    font-weight: 300;
-    font-size: 1.8em;
-    font-family: "Abril Fatface", serif;
-}
- .bookshelf figcaption h2 span {
-    position: relative;
-    display: block;
-    margin: 1em 0 0 0;
-    padding: 1em 0 0 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: 0.4em;
-    font-family: "Lato", sans-serif;
-}
-.bookshelf figcaption h2 span::before,
-.details ul li:first-child::after {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    width: 20%;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.1);
-    content: '';
-}
+
 
 
 
