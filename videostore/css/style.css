@@ -245,7 +245,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
     content: '';
 }
 .featuresscroll figure img {
-	position: relative;
+	position: absolute;
     display: inline-block;
 
 }
