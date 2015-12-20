@@ -206,7 +206,8 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
     display: inline-block;
     margin: 1px 0 0 0;
     padding: 1px 0;
-    max-width: 100%;
+   max-width: 75%;
+    width: 324px;
     vertical-align: top;
 }
 .featuresscroll figcaption {
