@@ -1,73 +1,99 @@
 <!DOCTYPE HTML>
-
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VideoStore - Music/Video Downloader</title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <meta name="title" content="VideoStore - Music/Video Downloader Android">
+    <meta name="description" content="An Android Application for downloading Music and HD Videos from YouTube, Facebook, Dailymotion etc .">
+    <meta name="keywords" content="video downloader,youtube downloader, music downloader, mp3 downloader, free youtube downloader, free video downloader, free downloader, DailyMotion downloader, Vimeo downloader, Whatsapp downloader, Videoder, videoder video downloader, videoder apk, android Youtube Downloader, Videoder 10.0, videoder apk, latest videoder apk,">
+    <meta name="author" content="VideoStore" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--   <link rel="stylesheet" type="text/css" href="css/component.css" />   -->
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body >
+<body onload="javascript:chnageimage('changer')">
 
-         <div class="header">
-		<h1 data-content="header-title" ><span>VideoStore - Music/Video Downloader</span></h1>
-          <h2 data-content="desc" >A music/video download application for android smart phones .</h2>
+ <div class="title">
 
+ <a href="" style="cursor:default">VideoStore - Video/Music Downloader</a>
 
-          </div>
+  </div>
 
-             <div class="downloadlayout">
-             <div id="downloadshelf" class="downloadshelf">
-             <figure>
-             	<figcaption><h2>Android version<span>Below Jelly Bean</span></h2></figcaption>
-                <a class="down-buttonpre" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStorepre.apk"  ><span><b>Download</b></span></a>
+   <div class="desc">
 
-				</figure>
-             <figure>
-             	<figcaption><h2>Android version<span>Above Jelly Bean</span></h2></figcaption>
-                  <a class="down-button" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStore.apk" ><span>Download</span></a>
+ <a href="" style="cursor:default"><strong>An Amazing Video/Music Downloader application for Android Smart-Phone Users . Download Now and enjoy videos and music from your favourite Web Sites like Youtube , DailyMotion , Vimeo ,Facebook etc </strong> </a>
 
-			   </figure>
+  </div>
 
-               </div>
-                </div>
+  <div class="downloadlayout">
+  <div id="downloadshelf" class="downloadshelf">
+     <figure>
+      <figcaption><h2>Android version<span>Below Jelly Bean</span></h2></figcaption>
+        <a class="down-buttonpre" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStorepre.apk"  ><span><b>Download</b></span></a>
 
+	 </figure>
+     <figure>
+       <figcaption><h2>Android version<span>Jelly Bean and Above</span></h2></figcaption>
+         <a class="down-button" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStore.apk" ><span>Download</span></a>
 
+	  </figure>
 
+     </div>
+    </div>
 
-  <div class="main">
-				<div id="description" class="description">
-						<div class="detail1">
+    	<div class="sae">
 
-                         <img src="https://cloud.githubusercontent.com/assets/16118642/11567398/eac60110-9a0c-11e5-806e-e74d4dfb2981.png" alt="Smiley face" height="800" width="500">
-						</div>
-                        <div class="detail2">
-                         <h2 data-content="deta" >Simple and Elegant design .</h2>
+<!--       <figure>
+	 <a href="https://tsovet.com/"><img src="img/mainpage.png"/></a>
+	 </figure>  -->
+     <figure>
+      <figcaption><h2>Simple And Elegant Design</h2></figcaption>
+	 </figure>
+     <figure>
+ <img src="t1" alt="test1" id="changer"/>
+	 </figure>
 
+	 </div>
 
-						</div>
+     <div class="features">
 
+ <span><strong>Features that make you fell in love with this app</strong> </span>
 
-           </div>
-            </div>
+  </div>
 
+        <div class="featuresscroll">
 
+ <span><strong>Features that make you fell in love with this app</strong> </span>
+                  <img src="img/main.png"/>
+  </div>
 
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+   <script type="text/javascript">
+var image=new Array("https://cloud.githubusercontent.com/assets/16118642/11567398/eac60110-9a0c-11e5-806e-e74d4dfb2981.png", "https://cloud.githubusercontent.com/assets/16118642/11567398/eac60110-9a0c-11e5-806e-e74d4dfb2981.png", "https://cloud.githubusercontent.com/assets/16118642/11567398/eac60110-9a0c-11e5-806e-e74d4dfb2981.png");
+var timeout={};
+function stopIt(){
+   clearTimeout(timeout);
+}
+function chnageimage(dvX){
+   var dvi=document.getElementById(dvX);
+   if(!dvi.count || dvi.count == image.length )
+      dvi.count=0;
+   dvi.src=image[dvi.count];
+   dvi.alt=image[dvi.count];
+   dvi.count=dvi.count+1;
+   timeout=setTimeout('chnageimage("'+dvX+'")',2000);
 }
 </script>
-
-<div class="related">
-
-					<h3>© VideoStore 2015</h3>
-					<h3>Made by Karanveer </h3>
-
-			</div>
 </body>
 
 </html>
