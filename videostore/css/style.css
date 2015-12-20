@@ -17,7 +17,7 @@ body {
 	font-family: "Avenir", Helvetica, Arial, sans-serif;
 	color: #CECECE;
 
-     background: #ddd url(https://cloud.githubusercontent.com/assets/16118642/11917074/f56f9392-a71d-11e5-9e7e-8f0e4e9d77ab.jpg) repeat top left;
+     background: #ddd url(../img//bg.jpg) repeat top left;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -63,7 +63,7 @@ a:hover {
 	color: #000; */
 }
 .desc {
-	line-height: 50px;
+	line-height: 20px;
 	font-size: 14px;
 	text-transform: uppercase;
 	z-index: 9999;
@@ -155,15 +155,11 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 .sae figure {
     position: relative;
     display: inline-block;
-    margin: 5em 5em;
+    margin: 5px 0 0 0;
     padding: 5px 0;
     max-width: 75%;
     width: 324px;
     vertical-align: top;
-     -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
 }
 .sae figcaption {
     position: relative;
@@ -181,7 +177,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 .sae figure img {
 	position: relative;
     display: inline-block;
-    max-width: 80%;
+    max-width: 140%;
     display: block;
 	margin: 0 auto;
 
@@ -197,7 +193,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 
 }
 .features span {
-    padding: 3% 3%;
+    padding: 1% 1%;
 	letter-spacing: 1px;
 	color: #333;
 	text-shadow: 0 -1px 0 #fff;
@@ -208,19 +204,54 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
     list-style: none;
     text-align: center;
 }
-.featuresscroll span {
-    position: absolute;
+.featuresscroll figure {
+    position: relative;
     display: inline-block;
-    margin: 5px 0 0 0;
-    padding: 5px 0;
+    margin: 1px 0 0 0;
+    padding: 1px 0;
     max-width: 75%;
     width: 324px;
     vertical-align: top;
 }
-.featuresscroll img {
+.featuresscroll figcaption {
+    position: relative;
+    top: 100%;
+    padding: 5em 2em;
+    text-align: center;
+}
+.featuresscroll figcaption h2 {
+    margin: 1em 0 0 0;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: #333;
+    font-family: "Abril Fatface", serif;
+}
+.featuresscroll figcaption span {
+    position: relative;
+    display: block;
+    margin: 1em 0 0 0;
+    padding: 1em 0 0 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1.0em;
+    line-height: 30px;
+    color: #333;
+    font-family: "Lato", sans-serif;
+}
+.featuresscroll figcaption span::before {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    content: '';
+}
+.featuresscroll figure img {
 	position: relative;
     display: inline-block;
-    max-width: 80%;
+    max-width: 140%;
+    padding: 1em 2em;
     display: block;
 	margin: 0 auto;
 
