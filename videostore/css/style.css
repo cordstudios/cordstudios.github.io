@@ -247,7 +247,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 .featuresscroll figure img {
 	position: relative;
     display: inline-block;
-    max-width: 140%;
+    max-width: 100%;
     padding: 1em 2em;
     display: block;
 	margin: 0 auto;
