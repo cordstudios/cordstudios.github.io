@@ -176,9 +176,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 .sae figure img {
 	position: relative;
     display: inline-block;
-    max-width: 140%;
-    display: block;
-	margin: 0 auto;
+    max-width: 100%;
 
 }
 .features {
