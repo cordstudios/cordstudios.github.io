@@ -1,21 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en" >
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>VideoStore 6.0 Music/Video Downloader Android</title>
-
-    <meta name="title" content="VideoStore 6.0 Music/Video Downloader Android">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VideoStore - Music/Video Downloader</title>
+     <meta name="title" content="VideoStore - Music/Video Downloader Android">
     <meta name="description" content="An Android Application for downloading Music and HD Videos from YouTube, Facebook, Dailymotion etc .">
     <meta name="keywords" content="video downloader,youtube downloader, music downloader, mp3 downloader, free youtube downloader, free video downloader, free downloader, DailyMotion downloader, Vimeo downloader, Whatsapp downloader, Videoder, videoder video downloader, videoder apk, android Youtube Downloader, Videoder 10.0, videoder apk, latest videoder apk,">
     <meta name="author" content="VideoStore" />
-    <meta name="Copyright" content="Copyright &copy; 2014-2015 VideoStore" />
-
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--   <link rel="stylesheet" type="text/css" href="css/component.css" />   -->
+    <script src="js/modernizr.custom.js"></script>
 
 </head>
-<body>
+
+<body onload="javascript:chnageimage('changer');javascript:chnagetile('tileimage');javascript:chnagetext1('tiletext1');javascript:chnagetext2('tiletext2');">
+
+ <div class="title">
+
+ <a href="" style="cursor:default"><strong>VideoStore - Video/Music Downloader</strong></a>
+
+  </div>
+
+   <div class="desc">
+
+ <a href="" style="cursor:default"><strong>An Amazing Video/Music Downloader application for Android Smart-Phone Users . Download Now and enjoy videos and music from your favourite Web Sites like Youtube , DailyMotion , Vimeo ,Facebook etc </strong> </a>
+
+  </div>
+
+  <div class="downloadlayout">
+  <div id="downloadshelf" class="downloadshelf">
+     <figure>
+      <figcaption><h2>Android version<span>Below Jelly Bean</span></h2></figcaption>
+        <a class="down-buttonpre" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStorepre.apk"  ><span><b>Download</b></span></a>
+
+	 </figure>
+     <figure>
+       <figcaption><h2>Android version<span>Jelly Bean and Above</span></h2></figcaption>
+         <a class="down-button" href="https://github.com/cordstudios/cordstudios.github.io/releases/download/v6.0/VideoStore.apk" ><span>Download</span></a>
+
+	  </figure>
+
+     </div>
+    </div>
+
+         <div class="features">
+
+ <span><strong>Features that make you fell in love with this app</strong> </span>
+
+  </div>
+
+
+
+     <script type="text/javascript">
+var image=new Array("img/noti.png", "img/musicshadow.png", "img/descshadow.png", "img/dashboardshadow.png", "img/notilockshadow.png", "img/videoshadow.png", "img/suggestionshadow.png");
+var text1=new Array("In Built Search", "Music Downloader", "Full(HD) Video Downloader","Dashboard with Controls","Notification controls","Watch Video","Search Suggestion");
+var text2=new Array("Makes quick search and go through videos quickly and easily",
+                    "Gives you option to listen or download music of your favourite songs",
+                    "Download any video in every possible resolution from 144p to 1080p full HD",
+                    "Fully featured dashboard with pause,resume,delete,open,share etc contols for each downloading video/music",
+                    "First and the only app that allows you to controls downloading with the controls in the notification bar..It's that Cool",
+                    "Watch videos in built-in player that shows video in 144p to 720p full HD with just one click",
+                    "Suggest you keywords that makes your search query ");
+
+var timeout={};
+function stopIt(){
+   clearTimeout(timeout);
+}
+
+function fadeIn(el, display){
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+function fadeOut(el){
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .1) < 0) {
+      el.style.display = "none";
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+
+function chnagetext1(dvX){
+   var dvi=document.getElementById(dvX);
+   if(!dvi.count || dvi.count == image.length )
+      dvi.count=0;
+   dvi.innerHTML=text1[dvi.count];
+   dvi.count=dvi.count+1;
+   timeout=setTimeout('chnagetext1("'+dvX+'")',4000);
+}
+function chnagetext2(dvX){
+   var dvi=document.getElementById(dvX);
+   if(!dvi.count || dvi.count == image.length )
+      dvi.count=0;
+   dvi.innerHTML=text2[dvi.count];
+   dvi.count=dvi.count+1;
+   fadeIn(dvi);
+
+   timeout=setTimeout('chnagetext2("'+dvX+'")',4000);
+}
+function chnagetile(dvX){
+   var dvi=document.getElementById(dvX);
+   if(!dvi.count || dvi.count == image.length )
+      dvi.count=0;
+   dvi.src=image[dvi.count];
+   dvi.alt=image[dvi.count];
+   dvi.count=dvi.count+1;
+   fadeIn(dvi);
+
+   timeout=setTimeout('chnageimage("'+dvX+'")',4000);
+}
+
+function chnageimage(dvX){
+   var dvi=document.getElementById(dvX);
+   if(!dvi.count || dvi.count == image.length )
+      dvi.count=0;
+   dvi.src=image[dvi.count];
+   dvi.alt=image[dvi.count];
+   dvi.count=dvi.count+1;
+   fadeIn(dvi);
+
+   timeout=setTimeout('chnageimage("'+dvX+'")',4000);
+}
+</script>
 
 
 </body>
+
 </html>
