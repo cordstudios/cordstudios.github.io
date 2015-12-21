@@ -208,7 +208,7 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 .featuresscroll figcaption {
     position: relative;
     top: 100%;
-    padding: 3em 2em;
+    padding: 1em 2em;
     text-align: center;
 }
 .featuresscroll figcaption h2 {
