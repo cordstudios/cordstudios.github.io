@@ -44,7 +44,8 @@ a:hover {
 	text-transform: uppercase;
 	z-index: 9999;
     text-align:center;
-	position: relative;
+	position: absolute;
+	width:100%;
 	font-family: Cambria, Georgia, serif;
 	box-shadow: 1px 0px 6px rgba(0,0,0,0.2);
 }
@@ -65,7 +66,6 @@ a:hover {
 	line-height: 20px;
 	font-size: 14px;
 	text-transform: uppercase;
-	z-index: 9999;
     text-align:center;
 	position: relative;
 	font-family: Cambria, Georgia, serif;
@@ -178,7 +178,6 @@ border-radius: 2px;max-width: 75%;width: 200px;vertical-align: top;color:#333;
 	line-height: 50px;
 	font-size: 18px;
 	text-transform: uppercase;
-	z-index: 9999;
     text-align:center;
 	position: relative;
 	font-family: Cambria, Georgia, serif;
