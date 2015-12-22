@@ -123,105 +123,18 @@
 	 
 	 <div class="featuresscroll" id="fs">
           <figure>
-    <img src="https://cloud.githubusercontent.com/assets/16118642/11926401/912dc322-a7ea-11e5-93e9-c8d0a18d805f.png" />
+    <img src="https://cloud.githubusercontent.com/assets/16118642/11949129/e1b55988-a8a1-11e5-8bd3-19fbfbd1b1e4.png" />
 	 </figure>
 
      <figure>
-      <figcaption><h2 id="tiletext1">Search Suggestion</h2><span id="tiletext2">Suggest you keywords that makes your search query</span></figcaption>
+      <figcaption><h2 id="tiletext1">Much More</h2><span id="tiletext2">And there's many more helpul features that will make your experience easy .</span></figcaption>
 	 </figure>
 
 	 </div>
            
 
 
-     <script type="text/javascript">
-var image=new Array("https://cloud.githubusercontent.com/assets/16118642/11926131/47ec07a2-a7e8-11e5-8fee-e8316867107b.png", 
-"https://cloud.githubusercontent.com/assets/16118642/11926462/2715ec48-a7eb-11e5-8c08-efc9c88b178d.png", 
-"https://cloud.githubusercontent.com/assets/16118642/11926508/8276c058-a7eb-11e5-8733-f5a5ab80d16c.png",
-"https://cloud.githubusercontent.com/assets/16118642/11926471/4ccdae08-a7eb-11e5-8f75-0953bcdd3a55.png", 
-"https://cloud.githubusercontent.com/assets/16118642/11926435/de890e56-a7ea-11e5-85d7-79d686e8f3bf.png", 
-"https://cloud.githubusercontent.com/assets/16118642/11926580/ff24657e-a7eb-11e5-9dc3-4617cc9d75b6.png", 
-"https://cloud.githubusercontent.com/assets/16118642/11926401/912dc322-a7ea-11e5-93e9-c8d0a18d805f.png");
-var text1=new Array("In Built Search", "Music Downloader", "Full(HD) Video Downloader","Dashboard with Controls","Notification controls","Watch Video","Search Suggestion");
-var text2=new Array("Makes quick search and go through videos quickly and easily",
-                    "Gives you option to listen or download music of your favourite songs",
-                    "Download any video in every possible resolution from 144p to 1080p full HD",
-                    "Fully featured dashboard with pause,resume,delete,open,share etc contols for each downloading video/music",
-                    "First and the only app that allows you to controls downloading with the controls in the notification bar..It's that Cool",
-                    "Watch videos in built-in player that shows video in 144p to 720p full HD with just one click",
-                    "Suggest you keywords that makes your search query ");
-
-var timeout={};
-function stopIt(){
-   clearTimeout(timeout);
-}
-
-function fadeIn(el, display){
-  el.style.opacity = 0;
-  el.style.display = display || "block";
-
-  (function fade() {
-    var val = parseFloat(el.style.opacity);
-    if (!((val += .1) > 1)) {
-      el.style.opacity = val;
-      requestAnimationFrame(fade);
-    }
-  })();
-}
-function fadeOut(el){
-  el.style.opacity = 1;
-
-  (function fade() {
-    if ((el.style.opacity -= .1) < 0) {
-      el.style.display = "none";
-    } else {
-      requestAnimationFrame(fade);
-    }
-  })();
-}
-
-function chnagetext1(dvX){
-   var dvi=document.getElementById(dvX);
-   if(!dvi.count || dvi.count == image.length )
-      dvi.count=0;
-   dvi.innerHTML=text1[dvi.count];
-   dvi.count=dvi.count+1;
-   timeout=setTimeout('chnagetext1("'+dvX+'")',8000);
-}
-function chnagetext2(dvX){
-   var dvi=document.getElementById(dvX);
-   if(!dvi.count || dvi.count == image.length )
-      dvi.count=0;
-   dvi.innerHTML=text2[dvi.count];
-   dvi.count=dvi.count+1;
-   fadeIn(dvi);
-
-   timeout=setTimeout('chnagetext2("'+dvX+'")',8000);
-}
-function chnagetile(dvX){
-   var dvi=document.getElementById(dvX);
-   if(!dvi.count || dvi.count == image.length )
-      dvi.count=0;
-   dvi.src=image[dvi.count];
-   dvi.alt=image[dvi.count];
-   dvi.count=dvi.count+1;
-   fadeIn(dvi);
-
-   timeout=setTimeout('chnageimage("'+dvX+'")',8000);
-}
-
-function chnageimage(dvX){
-   var dvi=document.getElementById(dvX);
-   if(!dvi.count || dvi.count == image.length )
-      dvi.count=0;
-   dvi.src=image[dvi.count];
-   dvi.alt=image[dvi.count];
-   dvi.count=dvi.count+1;
-   fadeIn(dvi);
-
-   timeout=setTimeout('chnageimage("'+dvX+'")',8000);
-}
-</script>
+   
 
 
 </body>
